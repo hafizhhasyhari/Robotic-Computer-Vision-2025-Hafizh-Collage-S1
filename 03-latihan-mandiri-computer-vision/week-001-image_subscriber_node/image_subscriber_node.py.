@@ -1,0 +1,22 @@
+def image_callback(self, ros_image):
+        try:
+            # Konversi ke BGR dulu
+            cv_image = self.bridge.imgmsg_to_cv2(ros_image, "bgr8")
+        except CvBridgeError as e:
+            rospy.logerr(e)
+            return
+
+        # --- LATIHAN MANDIRI DIMULAI DI SINI ---
+        
+        # Konversi gambar BGR ke Grayscale
+        gray_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2GRAY)
+        
+        # Tampilkan gambar grayscale
+        cv2.imshow("Grayscale Feed via ROS", gray_image)
+        
+        # (Opsional) Anda juga bisa tetap menampilkan yang asli
+        # cv2.imshow("Original Feed", cv_image) 
+        
+        cv2.waitKey(1)
+        
+        # --- LATIHAN MANDIRI SELESAI ---
