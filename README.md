@@ -1,73 +1,61 @@
-# Robotic-Computer-Vision-2025-Hafizh-Collage-S1
-🤖 Robotic Computer Vision
+# 🤖 Robotic Computer Vision
 <div align="center">
 Halo saya Hafizh Hilman Asyhari dari indonesia!.
+<br>
 Dokumentasi perjalanan belajar 16 minggu untuk mata kuliah Robotic Computer Vision.
-
-📜 Silabus Lengkap (16 Minggu) • 🚀 Quick Start • 🗂️ Struktur Repositori • 🎯 Proyek Utama
-
+<br><br>
+<a href="#-silabus-lengkap-16-minggu-syllabusmd">📜 Silabus Lengkap</a> • <a href="#-quick-start">🚀 Quick Start</a> • <a href="#-struktur-repositori">🗂️ Struktur Repositori</a> • <a href="#-fokus--studi-kasus">🎯 Proyek Utama</a>
 </div>
 
-🎯 Fokus & Studi Kasus
-Repositori ini mendokumentasikan pembelajaran saya dalam mata kuliah Robotic Computer Vision. Fokus utamanya adalah merancang dan mensimulasikan Robot Kurir Otonom (Autonomous Delivery Bot).
-Tujuan Proyek Utama: Membangun sistem visi untuk robot yang memungkinkannya:
-Bernavigasi di lingkungan yang telah dipetakan (misal: koridor).
-Menghindari rintangan statis dan dinamis (misal: orang, pot tanaman).
-Mendeteksi dan membaca target (misal: nomor pintu, QR code).
-Berinteraksi dengan objek (misal: berhenti di depan pintu yang benar).
-
-.
-
-📚 Pembagian Materi
-Perjalanan belajar ini dibagi menjadi empat bagian utama:
-
-Bagian 1: Fondasi RCV (Minggu 1-4)
-
-Pengenalan Robot Operating System (ROS) & OpenCV.
-
-Pemrosesan gambar dasar, filter, dan deteksi tepi.
-
-Transformasi geometris dan kalibrasi kamera.
-
-Bagian 2: "Melihat" Dunia (Minggu 5-8)
-
-Deteksi fitur (SIFT, ORB) dan pencocokan.
-
-Optical Flow dan pelacakan objek.
-
-Dasar-dasar Deep Learning (CNN) untuk klasifikasi.
-
-Ujian Tengah Semester (Implementasi Pelacak Objek Sederhana)
-
-Bagian 3: Memahami Ruang & Objek (Minggu 9-12)
-
-Object Detection (YOLO, SSD) secara real-time.
-
-Segmentasi Semantik (membedakan jalan, dinding, rintangan).
-
-Visi Stereo dan Perkiraan Kedalaman (Depth Estimation).
-
-Bagian 4: Navigasi & Aksi (Minggu 13-16)
-
-Dasar-dasar SLAM (Simultaneous Localization and Mapping).
-
-Integrasi Visi dengan ROS Navigation Stack.
-
-Interaksi Objek (Visual Servoing).
-
-Proyek Akhir (Demo Robot Kurir Otonom)
-Gazebo (untuk simulasi)
-
-## 🗂️ Struktur Repositori
-Struktur folder ini dirancang untuk mencerminkan 13 komponen pembelajaran yang Anda minta, diatur per minggu atau per topik.
-
-robotic-computer-vision/
 ---
 
-''' bash
+## 🎯 Fokus & Studi Kasus
+Repositori ini mendokumentasikan pembelajaran saya dalam mata kuliah **Robotic Computer Vision**. Fokus utamanya adalah merancang dan mensimulasikan **Robot Kurir Otonom (Autonomous Delivery Bot)**.
+
+**Tujuan Proyek Utama:**
+Membangun sistem visi untuk robot yang memungkinkannya:
+1.  **Bernavigasi** di lingkungan yang telah dipetakan (misal: koridor).
+2.  **Menghindari rintangan** statis dan dinamis (misal: orang, pot tanaman).
+3.  **Mendeteksi dan membaca** target (misal: nomor pintu, QR code).
+4.  **Berinteraksi** dengan objek (misal: berhenti di depan pintu yang benar).
+
+---
+
+## 📚 Pembagian Materi
+Perjalanan belajar ini dibagi menjadi empat bagian utama:
+
+* **Bagian 1: Fondasi RCV (Minggu 1-4)**
+    * Pengenalan Robot Operating System (ROS) & OpenCV.
+    * Pemrosesan gambar dasar, filter, dan deteksi tepi.
+    * Transformasi geometris dan kalibrasi kamera.
+
+* **Bagian 2: "Melihat" Dunia (Minggu 5-8)**
+    * Deteksi fitur (SIFT, ORB) dan pencocokan.
+    * Optical Flow dan pelacakan objek.
+    * Dasar-dasar Deep Learning (CNN) untuk klasifikasi.
+    * *Ujian Tengah Semester (Implementasi Pelacak Objek Sederhana)*
+
+* **Bagian 3: Memahami Ruang & Objek (Minggu 9-12)**
+    * Object Detection (YOLO, SSD) secara real-time.
+    * Segmentasi Semantik (membedakan jalan, dinding, rintangan).
+    * Visi Stereo dan Perkiraan Kedalaman (Depth Estimation).
+
+* **Bagian 4: Navigasi & Aksi (Minggu 13-16)**
+    * Dasar-dasar SLAM (Simultaneous Localization and Mapping).
+    * Integrasi Visi dengan ROS Navigation Stack.
+    * Interaksi Objek (Visual Servoing).
+    * *Proyek Akhir (Demo Robot Kurir Otonom di Gazebo)*
+
+---
+
+## 🗂️ Struktur Repositori
+Struktur folder ini dirancang untuk mencerminkan 13 komponen pembelajaran (materi, lab, proyek, dll.) yang diatur per minggu atau per topik.
+
+```bash
+robotic-computer-vision/
 │
 ├── README.md                 # Halaman utama ini
-├── SYLLABUS.md               # Silabus 16 minggu lengkap (ada di bawah)
+├── SYLLABUS.md               # Silabus 16 minggu lengkap
 ├── LICENSE
 ├── .gitignore
 ├── requirements.txt          # Kebutuhan library Python
@@ -127,42 +115,3 @@ robotic-computer-vision/
 └── media/                    # Gambar untuk README dan dokumentasi
     └── images/
         └── banner.png
-'''
-
-🚀 Quick Start
-Prasyarat
-Python 3.9+
-
-OpenCV 4.x
-
-ROS (Noetic atau Galactic/Humble direkomendasikan)
-
-Gazebo (untuk simulasi)
-
-Instalasi
-Clone repositori ini:
-
-Instalasi
-1. Clone repositori ini:
-
-'''
-git clone https://github.com/[USERNAME_ANDA]/robotic-computer-vision.git
-cd robotic-computer-vision
-'''
-
-2. Setup Python Environment (disarankan menggunakan venv):
-'''
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-'''
-3 Setup ROS Environment (jika menggunakan):
-'''
-# (Pastikan ROS sudah terinstal)
-# Buat Catkin Workspace (jika perlu)
-catkin_make
-source devel/setup.bash
-'''
-
-
-
